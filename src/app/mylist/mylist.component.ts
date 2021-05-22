@@ -17,7 +17,7 @@ export class MylistComponent implements OnInit {
 
   ngOnInit(): void {    
     this.ms.getMovieData()
-    .subscribe(resp => {this.movieList = resp})
+    .subscribe(resp => {this.movieList = resp; this.current = this.movieList.items[0]})
   }
 
   setCurrent(movie) {
