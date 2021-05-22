@@ -5,6 +5,7 @@ import { HomeComponent } from './home/home.component';
 import { MylistComponent } from './mylist/mylist.component';
 
 const routes: Routes = [
+  { path: '', component: HomeComponent},
   { path: 'home', component: HomeComponent },
   { path: 'mylist', component: MylistComponent},
   { path: 'contact', component: ContactComponent}
