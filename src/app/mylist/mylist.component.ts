@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { HttpClient } from '@angular/common/http'
+import { filter } from 'rxjs/operators';
 import { MovieService } from '../movie.service';
 
 @Component({
@@ -9,13 +9,14 @@ import { MovieService } from '../movie.service';
 })
 export class MylistComponent implements OnInit {
 
-  movie
+  movieList
+  searchTerm = ""
 
   constructor(private ms: MovieService) { }
 
   ngOnInit(): void {    
-    this.ms.getMovieData().subscribe(resp => this.movie = resp)
-    console.log(this.movie)
+    this.ms.getMovieData()
+    .subscribe(resp => {this.movieList = resp})
   }
 
 }

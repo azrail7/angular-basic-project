@@ -7,7 +7,7 @@ import { take } from 'rxjs/operators'
 })
 export class MovieService {
 
-  url = 'https://api.themoviedb.org/3/movie/550?api_key=f4035ed61edfd46a78ca2865f6783558'
+  url = 'https://api.themoviedb.org/3/list/1?api_key=f4035ed61edfd46a78ca2865f6783558'
 
   constructor(private http: HttpClient) {}
 

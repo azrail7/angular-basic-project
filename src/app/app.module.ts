@@ -9,7 +9,8 @@ import { HomeComponent } from './home/home.component';
 import { MylistComponent } from './mylist/mylist.component';
 import { ContactComponent } from './contact/contact.component';
 import { MovieService } from './movie.service';
-import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [MovieService],
   bootstrap: [AppComponent]
