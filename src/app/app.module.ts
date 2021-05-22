@@ -5,12 +5,18 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { CarouselComponent } from './carousel/carousel.component';
+import { HomeComponent } from './home/home.component';
+import { MylistComponent } from './mylist/mylist.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    CarouselComponent
+    CarouselComponent,
+    HomeComponent,
+    MylistComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
