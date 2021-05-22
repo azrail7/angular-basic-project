@@ -9,6 +9,7 @@ import { MovieService } from '../movie.service';
 })
 export class MylistComponent implements OnInit {
 
+  current
   movieList
   searchTerm = ""
 
@@ -19,4 +20,7 @@ export class MylistComponent implements OnInit {
     .subscribe(resp => {this.movieList = resp})
   }
 
+  setCurrent(movie) {
+    this.current = movie
+  }
 }
